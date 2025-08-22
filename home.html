@@ -22,7 +22,7 @@
                         <img src="./assets/Group.png" class="w-[50px] h-[50px]" alt="">
                     </div>
                     <div class="ml-2">
-                        <h1 class="font-bold text-xl">$<span>45000</span></h1>
+                        <h1 class="font-bold text-xl">$<span id="pregent-balan">45000</span></h1>
                         <p class="text-[#08080880]">Available Balance</p>
                     </div>
                 </div>
@@ -67,34 +67,38 @@
         </section>
     </main>
     <footer class="max-w-lg mx-auto mt-[32px]">
-        <h1 class="font-semibold text-lg">Add Money</h1>
-        <div class="bg-white mt-[16px] p-[24px] rounded-xl">
-            <div>
-                <label for="">Select A Bank</label>
-                <br>
-                <select class="select bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full">
-                    <option disabled selected>select</option>
-                    <option>ATP Bank</option>
-                    <option>Dhaka Bank</option>
-                    <option>Islami Bank</option>
-                    <option>DBST Bank</option>
-                </select>
+        <!-- add money  -->
+        <div id="add-money-section">
+            <h1 class="font-semibold text-lg">Add Money</h1>
+            <div class="bg-white mt-[16px] p-[24px] rounded-xl">
+                <div>
+                    <label for="">Select A Bank</label>
+                    <br>
+                    <select id="bank" class="select bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full">
+                        <option disabled selected>select</option>
+                        <option>ATP Bank</option>
+                        <option>Dhaka Bank</option>
+                        <option>Islami Bank</option>
+                        <option>DBST Bank</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Bank Account Number</label>
+                    <input type="text" id="bank-number" placeholder="Enter 11 digit account number" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
+                </div>
+                <div>
+                    <label for="">Amount to Add</label>
+                    <input type="text" id="add-amount" placeholder="Add Amount to withdraw" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
+                </div>
+                <div>
+                    <label for="">Pin Number</label>
+                    <input type="text" id="add-pin" placeholder="Enter 4 digit pin number" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
+                </div>
+            <button type="button" id="add-money-btn" class="btn w-full bg-[#0874F2] text-white font-semibold text-lg rounded-2xl">Add Money</button>
             </div>
-            <div>
-                <label for="">Bank Account Number</label>
-                <input type="text" id="mobile-input" placeholder="Enter 11 digit account number" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
-            </div>
-            <div>
-                <label for="">Amount to Add</label>
-                <input type="text" id="mobile-input" placeholder="Add Amount to withdraw" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
-            </div>
-            <div>
-                <label for="">Pin Number</label>
-                <input type="text" id="mobile-input" placeholder="Enter 4 digit pin number" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
-            </div>
-             <button type="button" id="login-btn" class="btn w-full bg-[#0874F2] text-white font-semibold text-lg rounded-2xl">Add Money</button>
-
         </div>
+        <!-- Cashout money  -->
     </footer>
+    <script src="./js/homehtml.js"></script>
 </body>
 </html>
