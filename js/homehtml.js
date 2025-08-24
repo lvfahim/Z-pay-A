@@ -72,7 +72,7 @@ document.getElementById('add-money-btn').addEventListener('click',
             return;
         }
         const pinNumber=creatNumber('add-pin')
-        console.log(addAmount,pinNumber);
+        // console.log(addAmount,pinNumber);
         // console.log(bank,bankNumber,addAmount,pinNumber)
         const pregentBalan=creatInnertext('pregent-balan')
         if(bankNumber.length <11){
@@ -172,3 +172,11 @@ document.getElementById('transactions-section-btn').addEventListener('click',
         buttonBgColor('transactions-section-btn')
     }
 );
+
+
+// LogOut
+document.getElementById('LogOut').addEventListener('click',
+    function (){
+        window.location.href="./index.html"
+    }
+)
