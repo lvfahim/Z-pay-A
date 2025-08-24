@@ -39,27 +39,27 @@
         </section>
         <section>
             <div class="grid grid-cols-3 gap-4 pt-[32px] ">
-                <div class=" border-2 border-gray-300 p-4 rounded-xl ">
+                <div id="add-money-section-btn" class="from-btn border-2 border-gray-300 p-4 rounded-xl ">
                     <img src="./assets/wallet1.png" class="mx-auto" alt="">
                     <h1 class="text-center text-[#08080880] font-semibold mt-1">Add Money</h1>
                 </div>
-                <div class=" border-2 border-gray-300 p-4 rounded-xl ">
+                <div id="cashout-section-btn" class="from-btn border-2 border-gray-300 p-4 rounded-xl ">
                     <img src="./assets/send1.png" class="mx-auto" alt="">
                     <h1 class="text-center text-[#08080880] font-semibold mt-1">Cashout</h1>
                 </div>
-                <div class=" border-2 border-gray-300 p-3 rounded-xl">
+                <div id="transfer-money-section-btn" class="from-btn border-2 border-gray-300 p-3 rounded-xl">
                     <img src="./assets/money1.png" class="mx-auto" alt="">
                     <h1 class="text-center text-[#08080880] font-semibold ">Transfer Money</h1>
                 </div>
-                <div class=" border-2 border-gray-300 p-4 rounded-xl ">
+                <div id="get-bonus-section-btn" class="from-btn border-2 border-gray-300 p-4 rounded-xl ">
                     <img src="./assets/bonus1.png" class="mx-auto" alt="">
                     <h1 class="text-center text-[#08080880] font-semibold mt-1">Get Bonus</h1>
                 </div>
-                <div class=" border-2 border-gray-300 p-4 rounded-xl ">
+                <div id="pay-bill-section-btn" class="from-btn border-2 border-gray-300 p-4 rounded-xl ">
                     <img src="./assets/purse1.png" class="mx-auto" alt="">
                     <h1 class="text-center text-[#08080880] font-semibold mt-1">Pay Bill</h1>
                 </div>
-                <div class=" border-2 border-gray-300 pt-4 rounded-xl ">
+                <div id="transactions-section-btn" class="from-btn border-2 border-gray-300 pt-4 rounded-xl ">
                     <img src="./assets/transaction1.png" class="mx-auto" alt="">
                     <h1 class="text-center text-[#08080880] font-semibold mt-1">Transactions</h1>
                 </div>
@@ -68,7 +68,7 @@
     </main>
     <footer class="max-w-lg mx-auto mt-[32px]">
         <!-- add money  -->
-        <div id="add-money-section">
+        <div class="from" id="add-money-section" style="display: none;">
             <h1 class="font-semibold text-lg">Add Money</h1>
             <div class="bg-white mt-[16px] p-[24px] rounded-xl">
                 <div>
@@ -98,6 +98,102 @@
             </div>
         </div>
         <!-- Cashout money  -->
+        <div class="from" id="cashout-section" style="display: none;">
+            <h1 class="font-semibold text-lg">Cash Out</h1>
+            <div class="bg-white mt-[16px] p-[24px] rounded-xl">
+                <div>
+                    <label for="">Agent Number</label>
+                    <input type="text" id="agent-number" placeholder="Enter 11 digit number" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
+                </div>
+                <div>
+                    <label for="">Amount</label>
+                    <input type="text" id="withdraw-amount" placeholder="Add Amount to withdraw" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
+                </div>
+                <div>
+                    <label for="">Pin Number</label>
+                    <input type="text" id="width-pin" placeholder="Enter 4 digit pin number" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
+                </div>
+            <button type="button" id="withdraw-btn" class="btn w-full bg-[#0874F2] text-white font-semibold text-lg rounded-2xl">Withdraw Money</button>
+            </div>
+        </div>
+        <!-- Transfer Money -->
+        <div class="from" id="transfer-section" style="display: none;">
+            <h1 class="font-semibold text-lg">Transfer Money</h1>
+            <div class="bg-white mt-[16px] p-[24px] rounded-xl">
+                <div>
+                    <label for="">User Account Number</label>
+                    <input type="text" id="" placeholder="Enter 11 digit number" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
+                </div>
+                <div>
+                    <label for="">Amount</label>
+                    <input type="text" id="" placeholder="Add Amount to withdraw" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
+                </div>
+                <div>
+                    <label for="">Pin Number</label>
+                    <input type="text" id="" placeholder="Enter 4 digit pin number" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
+                </div>
+            <button type="button" id="" class="btn w-full bg-[#0874F2] text-white font-semibold text-lg rounded-2xl">Send Now</button>
+            </div>
+        </div>
+        <!-- Get Bonus -->
+        <div class="from" id="get-bonus-section" style="display: none;">
+            <h1 class="font-semibold text-lg">Get Bonus</h1>
+            <div class="bg-white mt-[16px] p-[24px] rounded-xl">
+                <div>
+                    <label for="">Enter Bonus Coupon</label>
+                    <input type="text" id="" placeholder="Enter your coupon" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
+                </div>
+            <button type="button" id="" class="btn w-full bg-[#0874F2] text-white font-semibold text-lg rounded-2xl">Get Bonus</button>
+            </div>
+        </div>
+        <!-- Pay Bill -->
+        <div class="from" id="pay-bill-section" style="display: none;">
+            <h1 class="font-semibold text-lg">Pay Bill</h1>
+            <div class="bg-white mt-[16px] p-[24px] rounded-xl">
+                <div>
+                    <label for="">Select To Pay</label>
+                    <br>
+                    <select id="" class="select bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full">
+                        <option disabled selected>select</option>
+                        <option>ATP Bank</option>
+                        <option>Dhaka Bank</option>
+                        <option>Islami Bank</option>
+                        <option>DBST Bank</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Biller Account Number</label>
+                    <input type="text" id="" placeholder="Enter account number" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
+                </div>
+                <div>
+                    <label for="">Amount to Pay</label>
+                    <input type="text" id="" placeholder="Add Amount to pay" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
+                </div>
+                <div>
+                    <label for="">Pin Number</label>
+                    <input type="text" id="" placeholder="Enter 4 digit pin number" class="input input-ghost bg-[#f4f5f7] mt-4 mb-8 rounded-4xl w-full"/>
+                </div>
+            <button type="button" id="" class="btn w-full bg-[#0874F2] text-white font-semibold text-lg rounded-2xl">Pay Now</button>
+            </div>
+        </div>
+        <!-- Transactions -->
+        <div class="from" id="transaction-section" style="display: none;">
+            <div class="flex justify-between items-center">
+                <h1 class="font-semibold text-lg">Transaction History</h1>
+                <p class="text-[#08080880] font-semibold">View All</p>
+            </div>
+            <div id="transaction-add">
+                
+            </div>
+        </div>
+        <!-- Latest Payment -->
+        <div id="latest-payment">
+            <h1 class="font-semibold text-lg">Latest Payment</h1>
+            <div id="transaction-add">
+                
+            </div>
+        </div>
+
     </footer>
     <script src="./js/homehtml.js"></script>
 </body>
